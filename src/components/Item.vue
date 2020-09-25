@@ -41,11 +41,12 @@ export default {
 
 <style lang="stylus">
 .news-item
-  background-color #fff
+  background-color #304f5d
   padding 20px 30px 20px 80px
   border-bottom 1px solid #eee
   position relative
   line-height 20px
+
   .score
     color #ff6600
     font-size 1.1em
@@ -56,12 +57,17 @@ export default {
     width 80px
     text-align center
     margin-top -10px
+  .title
+    a
+      color: #fff
+      font-weight: 500
   .meta, .host
     font-size .85em
-    color #828282
+    font-weight: 300
+    color: #ffffff
     a
       color #828282
       text-decoration underline
       &:hover
-        color #ff6600
+        color #ffffff
 </style>

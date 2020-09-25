@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+
 import actions from './actions'
 import mutations from './mutations'
 import getters from './getters'
+
+// Modules
+import audio from "./modules/audio.module";
 
 Vue.use(Vuex)
 
@@ -23,6 +27,9 @@ export function createStore () {
     },
     actions,
     mutations,
-    getters
+    getters,
+    // modules: {
+    //   audio,
+    // }
   })
 }

@@ -62,6 +62,7 @@ export function fetchUser (id) {
 export function watchList (type, cb) {
   let first = true
   const ref = api.child(`${type}stories`)
+
   const handler = snapshot => {
     if (first) {
       first = false
@@ -69,6 +70,7 @@ export function watchList (type, cb) {
       cb(snapshot.val())
     }
   }
+
   ref.on('value', handler)
   return () => {
     ref.off('value', handler)

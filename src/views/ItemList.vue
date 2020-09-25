@@ -104,22 +104,27 @@ export default {
   padding-top 45px
 
 .news-list-nav, .news-list
-  background-color #fff
-  border-radius 2px
+  background-color: #304f5d17
+  border-radius: 2px
 
 .news-list-nav
   padding 15px 30px
   position fixed
   text-align center
-  top 55px
+  top 70px
   left 0
   right 0
   z-index 998
   box-shadow 0 1px 2px rgba(0,0,0,.1)
   a
     margin 0 1em
+    color #6ebde0
+    cursor pointer
   .disabled
-    color #ccc
+    color #4d91a7
+  span
+    color: #e3e7e9;
+    font-weight: 500;
 
 .news-list
   position absolute
@@ -130,6 +135,8 @@ export default {
     list-style-type none
     padding 0
     margin 0
+  &-nav
+    background-color: #304f5dcf
 
 .slide-left-enter, .slide-right-leave-to
   opacity 0

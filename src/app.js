@@ -4,10 +4,12 @@ import { createStore } from './store'
 import { createRouter } from './router'
 import { sync } from 'vuex-router-sync'
 import titleMixin from './util/title'
+import descriptionMixin from './util/description'
 import * as filters from './util/filters'
 
 // mixin for handling title
 Vue.mixin(titleMixin)
+Vue.mixin(descriptionMixin)
 
 // register global utility filters.
 Object.keys(filters).forEach(key => {
